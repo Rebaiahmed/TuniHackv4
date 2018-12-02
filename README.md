@@ -12,7 +12,7 @@ Our project aims to facilitate open data vizualisation related to municipalities
  
  ![server](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/server.png)
   
- ![client](ttps://github.com/Rebaiahmed/TuniHackv4/blob/master/code/client.png)
+ ![client](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/client.png)
  
 
 
