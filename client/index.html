@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+
+
+
+
+<link  rel="stylesheet" type="text/css" href="./style.css" />
+<!-- Material Design for Bootstrap fonts and icons -->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <nav class="navbar  fixed-top navbar-custom">
+        <a class="navbar-brand" href="#">TunisaGovs</a>
+      </nav>
+
+
+
+    <div  class="container-fluid">
+
+
+<br />
+<br />
+<br />
+
+              <div class="row">
+
+                  <ul class="list-unstyled">
+                      <li class="media">
+                        <img class="mr-3" src="./images/sante.png" alt="">
+                        <div class="media-body">
+                          <h5 class="mt-0 mb-1">راصد محلي</h5>
+                          
+          مواطنون ومواطنات مهتمون بالشأن البلدي، يتابعون الجلسات التمهيدية والدورات العادية في بلدياتهم في كافة تراب الجمهورية، ويشاركون في وضع المواطن في صلب عملية أخذ القرار على النطاق المحلي.
+          
+          نسبة تواجد الراصدين المحليين في كافة البلديات:
+          63%
+          الراصدين المحليين الفاعلين : 222
+          محاضر الجلسات التي حررها الراصدون :
+                        </div>
+                      </li>
+                     
+                    </ul>
+
+
+
+
+              </div>
+
+
+
+              <div class="row">
+                  <div id="map"></div>
+              </div>
+
+<div class="row">
+
+   
+
+    
+
+  <div class="col-6 map-contour">
+  
+
+   
+        
+  </div>
+
+
+
+  <div class="col-3">
+    
+      <form>
+          
+        
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"> ترتيب الولايات حسب نسبة الشفافية</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="asc">ASC </option>
+              <option value="desc"> DESC</option>
+
+            </select>
+          </div>
+       </form>   
+      
+    </div>
+
+    <table class="table" id="chafefeya">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Elwileya</th>
+            <th scope="col">score</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+          </tr>
+         
+        </tbody>
+      </table>
+         
+  </div>
+
+
+  <div class="row">
+      <p class="text-center">Al3b Ma3an LO3ba bch terbhe cadeau !</p>
+
+      <button type="button" class="btn btn-raised btn-info">Eljdid Eljdid</button>
+
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="governorat_name">Esm lwileya</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+              <div class="slideInRight" style="width: 10rem;">
+                  <button type="button" class="btn btn-outline-danger btn-sm"> <p id="crimes">10 Crimes pour l'année 2012</p></button>
+                  <button type="button" class="btn btn-outline-success btn-sm"> <p id="darchabeb">10 Dar chabeb l'année 2012</p></button>
+                  <button type="button" class="btn btn-outline-primary btn-sm"> <p id="tbib">13 tbitb l'année 2012</p></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"> <p id="crimes">15% nsbeh njeh lbac  l'année 2012</p></button>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+          
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--footer-->
+
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 navbar-fixed-bottom">
+
+    
+
+   
+
+  </footer>
+  <!-- Footer -->
+
+
+  </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script>
+
+  var marks = [{long: -75, lat: 43},{long: -78, lat: 41},{long: -70, lat: 53}];
+
+var width = 960,
+    height = 500;
+
+var path = d3.geo.path();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+d3.json("tunisia.json", function(error, topology) {
+  
+  //console.clear();
+
+  var featureCollection = topojson.feature(topology, topology.objects.governorates);
+  var bounds = d3.geo.bounds(featureCollection);
+  
+  var centerX = d3.sum(bounds, function(d) {return d[0];}) / 2,
+      centerY = d3.sum(bounds, function(d) {return d[1];}) / 2;
+
+  var projection = d3.geo.mercator()
+    .scale(3000)
+    .center([centerX, centerY]);
+    
+  path.projection(projection);
+  
+  svg.selectAll("path")
+      .data(featureCollection.features)
+      .enter().append("path")
+      
+      .attr("d", path)
+      .attr("xlink:href",'https://cdn3.iconfinder.com/data/icons/softwaredemo/PNG/24x24/DrawingPin1_Blue.png')
+      .on("mouseover", function(d, i) {
+        //alert("moue over hey ")
+      d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
+   })
+
+     .on("click", function(d,i){
+            console.log('elment is d' + JSON.stringify(d.properties.gov_name_f));
+            d3.selectAll('path').style('fill',null);
+       d3.select(this).style("fill","orange")
+       //_____CALL THE API____________________________________//
+            Get_info_Gouvernnace(d.properties.gov_name_f)
+            $('#myModal').modal('show');
+        })
+
+        .attr("xlink:href", "/icon.png")
+
+        /*.data(data.filter(function(d){return d. == "Siliana";}))
+			.enter()
+            .append("div")
+            .attr("class", "h-bar")
+			.append("span");*/
+ 
+})
+
+
+
+
+
+//__________________________________//
+
+svg.selectAll("path")
+    .data(marks)
+    .enter()
+    .append("svg:image")
+    .attr('class','mark')
+    .attr('width', 20)
+    .attr('height', 20)
+    //.attr("xlink:href","map-pin2.png")
+    //.attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";});
+
+
+
+
+ /*const zoom = d3.zoom()
+    .scaleExtent([1, 40])
+    .translateExtent([[0,0], [width, height]])
+    .extent([[0, 0], [width, height]])
+    .on("zoom", zoomed);*/
+
+
+
+
+
+
+function clicked(d) {
+  console.log('d ' + JSON.stringify(d.properties.gov_name_f));
+  //alert("hdhdh")
+  if (active.node() === this) return reset();
+  active.classed("active", false);
+  active = d3.select(this).classed("active", true);
+
+  var bounds = path.bounds(d),
+      dx = bounds[1][0] - bounds[0][0],
+      dy = bounds[1][1] - bounds[0][1],
+      x = (bounds[0][0] + bounds[1][0]) / 2,
+      y = (bounds[0][1] + bounds[1][1]) / 2,
+      scale = .9 / Math.max(dx / width, dy / height),
+      translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+  g.transition()
+      .duration(750)
+      .style("stroke-width", 1.5 / scale + "px")
+      .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+
+  
+}
+
+function reset() {
+  active.classed("active", false);
+  active = d3.select(null);
+
+  g.transition()
+      .duration(750)
+      .style("stroke-width", "1.5px")
+      .attr("transform", "");
+}
+
+
+/*function zoomed(){
+  g.attr("transform", d3.event.transform);
+}*/
+
+
+
+
+// Define map zoom behaviour
+/*var zoom = d3
+   .zoom()
+   .on("zoom", zoomed)
+;*/
+
+
+ function circleMarker() {
+    var sizeScale = d3.scale.linear().domain([0,100,2000]).range([2,10,20]).clamp(true);
+    var randomDatapoint = "r" + Math.ceil(Math.random() * 7);
+    d3.selectAll("g.marker").selectAll("*").remove();
+    d3.selectAll("g.marker").append("circle")
+    .attr("class", "metro")
+    .attr("r", function(d) {return sizeScale(d[randomDatapoint])})
+  }
+
+  //circleMarker()
+
+
+  function Get_info_Gouvernnace(name)
+  {
+    fetch('http://127.0.0.1:5000/gouverment/'+ name)
+            .then(function (res) {
+                return res.json()
+            })
+            .then(function (data) {
+                console.log('data backedn' + JSON.stringify(data));
+                //____display the data __________________________//
+                //set the ID of the Gouvernorat_____//
+                $("#governorat_name").html(data.result.gouv );
+                $("#crimes").html(data.result.nbre_decrimes +"crimes weldik");
+                $("#darchabeb").html(data.result.nbre_demaisonsdeculture);
+                
+                $("#tbib").html(data.result.nbre_demedecins);
+
+
+                
+
+            }).catch(function (err) {
+                console.log(err)
+            })   
+  }
+
+</script>
+<script>
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
+</body>
+</html>
