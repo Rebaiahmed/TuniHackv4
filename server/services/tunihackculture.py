@@ -10,11 +10,11 @@ Original file is located at
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import re
 from google.colab import files
 files.upload()
 
-df1 = pd.read_csv('annuaire_culturel_-_maison_de_culture_en_tunisie (1).csv',index_col=0, delimiter=';')
+df1 = pd.read_csv('annuaire_culturel_-_maison_de_culture_en_tunisie.csv',index_col=0, delimiter=';')
 df1
 
 df1['gouv'] = df1.index
@@ -24,32 +24,11 @@ df1
 
 df1=df1.groupby('gouv').mean()
 
-df1
-
-from google.colab import files
-files.upload()
-
 df2 = pd.read_csv('annuaires_des_medecins_specialistes_dans_le_secteur_privee.csv',index_col=0, delimiter=';')
-
-df2
 
 df2['count'] = df2.groupby('lib_gouv')['lib_gouv'].transform('count')
 
 df2=df2.groupby('lib_gouv').mean()
-
-df2
-
-df2.shape
-
-from google.colab import files
-files.upload()
-
-!rm
-
-!pip install xlrd
-
-from google.colab import files
-files.upload()
 
 excel_names = ["ariana.xlsx", "beja.xlsx", "bizerte.xlsx", "gabes.xlsx","gafsa.xlsx","jendouba.xlsx","kairouan.xlsx","kasserine.xlsx","kef.xlsx","medenine.xlsx","monastir.xlsx","nabeul.xlsx","sfax.xlsx","sidibouzid.xlsx","sousse.xlsx"]
 
@@ -67,16 +46,15 @@ df3=df3.loc[df3.index == 2015]
 
 df3.gouv.replace(['kef', 'sidibouzid'], ['le kef', 'sidi bouzid'], inplace=True)
 
-df3
 
-from google.colab import files
-files.upload()
+
+#_________________________________________________#
 
 df4=pd.read_excel('transparence.xlsx',index_col=None, header=None)
 
 
 
-import re
+
 list=[]
 for i in range(len(df4)):
   list.append(" ".join(re.findall("[a-zA-Z]+", df4[0][i])))
@@ -86,7 +64,6 @@ for i in range(len(list)):
 
 df4['gouv']=list
 
-df4
 
 dict =	{
   "أريانة":"ariana",
@@ -128,7 +105,6 @@ df2['gouv']=df2.index
 df2['gouv']=df2['gouv'].str.lower()
 
 data= pd.merge(df1, df2, on='gouv', how='outer')
-data
 
 data=pd.merge(data,df3, on=['gouv'], how='outer')
 
@@ -138,13 +114,6 @@ data['nbre_decrimes']=data['Données']
 
 features_cols = ['gouv', 'nbre_demaisonsdeculture', 'nbre_demedecins', 'nbre_decrimes']
 data=data[features_cols]
-data
-
 data.to_csv('out.csv')
 
-files.download('out.csv')
-
-df4
-
-df4.shape
-
+#files.download('out.csv')
