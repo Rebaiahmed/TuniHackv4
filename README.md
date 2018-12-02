@@ -5,8 +5,8 @@ Our project aims to facilitate open data vizualisation related to municipalities
 
 ## Project structure 
  - preprocessing (cvs files, scrapping)
- - back-end project: Mongodb
- - front-end project: D3.js
+ - back-end project: server
+ - front-end project: client
 
 
 
@@ -19,15 +19,15 @@ cd client &&  http-server
 
 ### start the back-end project
 ```
-python3 server.py
+cd server && python3 server.py
 ```
 
 
 ## Built With
 
 * [D3.js(https://d3js.org/) - The web library used for making interactive map 
-* [Tunisia.json () - Tunisia country geographic data 
-* [pandas (https://pandas.pydata.org/)  (data preprocessing lbrary ) ](https://maven.apache.org/) - Dependency Management
+* [Tunisia.json (https://github.com/Rebaiahmed/TuniHackv4/blob/master/client/geojson/tunisia.json) - Tunisia country geographic data 
+* [pandas (https://pandas.pydata.org/)  (data preprocessing lbrary ) ](https://maven.apache.org/) 
 * [Falsk](http://flask.pocoo.org/) - microframework for Python 
 * [MongoDB](https://www.mongodb.com/) NoSQL DATABASE
 * [Beautilfu-soup(web scrapping library) ](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) -Python web scrapping library 
@@ -40,20 +40,20 @@ python3 server.py
 
 ## Demo 
 
-* Demo preprocessing: https://drive.google.com/open?id=1TZPok1j5ZtsuIAlUOzqG-75lK2A_WLir
-* Demo scrapping https://drive.google.com/open?id=1DaE7ZFccRIBdkQXgOFMtfla6FPR_p4Wp
+* Demo preprocessing: https://drive.google.com/file/d/1TZPok1j5ZtsuIAlUOzqG-75lK2A_WLir/view?usp=sharing
+* Demo scrapping https://drive.google.com/file/d/1DaE7ZFccRIBdkQXgOFMtfla6FPR_p4Wp/view?usp=sharing
 * Demo video-game https://github.com/Rebaiahmed/TuniHackv4/blob/master/bandicam 2018-12-02 12-06-28-924.mp4
 
 
 ##screenshots Game 
 
-![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screenshot1.png)
-![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screenshot1.png)
-![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screenshot1.png)
+![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/game1.png)
+![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/game2.png)
+![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/game3.png)
 
 ![screen1](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screenshot1.png)
 ![screen2](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screen2.png)
-![screen3](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screen3.png)
+![screen3](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/kebeli.png)
 ![screen4](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/screen4.png)
 
 
@@ -67,9 +67,9 @@ python3 server.py
 ## Authors
 
 * **Cyrine Maghraoui **
-* **Methnani Sameh **
+* **[Methnani Sameh] (https://github.com/Sammeth0) **
 * **Meher Matmati ** 
-* **Rebai Ahmed ** 
+* **Rebai Ahmed (https://github.com/Rebaiahmed) ** 
 
 
 
@@ -80,4 +80,4 @@ python3 server.py
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License 
