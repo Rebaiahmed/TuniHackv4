@@ -7,6 +7,13 @@ Our project aims to facilitate open data vizualisation related to municipalities
  - preprocessing (cvs files, scrapping)
  - back-end project: server
  - front-end project: client
+ 
+ 
+ 
+ ![server](https://github.com/Rebaiahmed/TuniHackv4/blob/master/code/server.png)
+  
+ ![client](ttps://github.com/Rebaiahmed/TuniHackv4/blob/master/code/client.png)
+ 
 
 
 
